@@ -1,15 +1,15 @@
 ﻿namespace ConsoleApp1;
 
-class BudgetService
+public class BudgetService
 {
-    private IBudgetRepo _budgetRepo;
+    public IBudgetRepo _budgetRepo;
 
     public BudgetService(IBudgetRepo budgetRepo)
     {
         _budgetRepo = budgetRepo;
     }
 
-    decimal Query(DateTime startDate, DateTime endDate)
+    public decimal Query(DateTime startDate, DateTime endDate)
     {
         if (startDate > endDate)
         {

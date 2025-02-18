@@ -8,12 +8,12 @@
     }
 
 
-    interface IBudgetRepo
+    public interface IBudgetRepo
     {
         List<Budget> GetAll();
     }
 
-    class Budget
+    public class Budget
     {
         public string YearMonth;
         public int Amount;
